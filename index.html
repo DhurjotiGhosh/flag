@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independence Day Flag with Ashoka Chakra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Heading -->
+    <h1 class="heading">Happy Independence Day To All My Friends We11Group</h1>
+
+    <!-- Flag -->
+    <div class="flag">
+        <div class="saffron"></div>
+        <div class="white">
+            <div class="chakra">
+                <!-- Chakra Center -->
+                <div class="chakra-center"></div>
+                <!-- Chakra Spokes -->
+                <div class="spokes-container">
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                </div>
+            </div>
+        </div>
+        <div class="green"></div>
+    </div>
+
+    <!-- Audio Player -->
+    <div class="audio-container">
+        <button id="playButton">Play National Anthem</button>
+        <audio id="anthem" controls preload="none">
+            <source src="national_anthem.mp3" type="audio/mp3">
+            <source src="national_anthem.ogg" type="audio/ogg">
+            <p>Your browser does not support the audio element. Please use a modern browser.</p>
+        </audio>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Created by Dhurjoti Ghosh</p>
+    </div>
+
+    <script>
+        const playButton = document.getElementById("playButton");
+        const anthem = document.getElementById("anthem");
+
+        playButton.addEventListener("click", () => {
+            if (anthem.paused) {
+                anthem.play();
+                playButton.textContent = "Pause National Anthem";
+            } else {
+                anthem.pause();
+                playButton.textContent = "Play National Anthem";
+            }
+        });
+    </script>
+</body>
+</html>
